@@ -18,7 +18,7 @@ namespace ApiCalls
         /// integer depending upon the result -1 for server error
         /// 0 for 
         /// </returns>
-        int Check_User_Exist(long userid,string username,string service);
+        int Check_User_Exist(Credentials credentials);
 
         /// <summary>
         /// 
