@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Chq.OAuth.dll</id>
+    <version>0.8.3</version>
+    <title>Chq.OAuth</title>
+    <authors>Michael McKenna</authors>
+    <owners>Michael McKenna</owners>
+    <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
+    <projectUrl>http://oauth.concepthq.net/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A WinMD OAuth library for Windows 8.</description>
+    <releaseNotes>Coolya made the lib WinMD compatible so now it can be now used in all WinRT applications, not just the C# ones ;)</releaseNotes>
+    <copyright>Copyright 2012</copyright>
+    <tags>WinRT OAuth Windows 8 WinMD</tags>
+    <references>
+      <reference file="Chq.OAuth.dll" />
+      <reference file="Chq.OAuth.winmd" />
+    </references>
+  </metadata>
+</package>
