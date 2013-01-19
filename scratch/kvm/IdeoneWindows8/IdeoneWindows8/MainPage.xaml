@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="IdeoneWindows8.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IdeoneWindows8"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid Margin="0,-10,0,10">
+            <Grid.Background>
+                <ImageBrush x:Name="BackgroundImage" ImageSource="/resources/Nanotubes.jpg"></ImageBrush>
+            </Grid.Background>
+            <TextBlock HorizontalAlignment="Left" Margin="371,76,0,0" TextWrapping="Wrap" Text="Code Studio" VerticalAlignment="Top" Height="94" Width="599" TextAlignment="Center" FontSize="100" FontWeight="Bold"/>
+            <Image HorizontalAlignment="Left" Height="64" Margin="155,495,0,0" VerticalAlignment="Top" Width="323" Source="Resources/facebook.png" GotFocus="Image_GotFocus_1" PointerEntered="Image_PointerEntered_1" PointerExited="Image_PointerExited_1" Tapped="Image_Tapped_1"/>
+            <HyperlinkButton Content="Guest Login?" HorizontalAlignment="Left" Margin="1207,719,0,0" VerticalAlignment="Top" Width="136" Height="41" FontSize="16"/>
+            <HyperlinkButton Content="Copyright © 2013 PheonixLabs" HorizontalAlignment="Left" Margin="560,719,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <Image HorizontalAlignment="Left" Height="64" Margin="522,495,0,0" VerticalAlignment="Top" Width="322" Source="Resources/twitter.jpg" Stretch="Fill" PointerEntered="Image_PointerEntered_2" PointerExited="Image_PointerExited_2" Tapped="Image_Tapped_2"/>
+            <Image HorizontalAlignment="Left" Height="64" Margin="897,495,0,0" VerticalAlignment="Top" Width="276" Source="Resources/google.png" Stretch="Fill" PointerEntered="Image_PointerEntered_3" PointerExited="Image_PointerExited_3" Tapped="Image_Tapped_3"/>
+            <HyperlinkButton Content="About&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,721,0,0" VerticalAlignment="Top"/>
+            <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="23" Margin="226,357,0,0" VerticalAlignment="Top" Width="909" Maximum="200" IsIndeterminate="{Binding Path=isIndeterminate}" FontSize="22">
+                <ProgressBar.Background>
+                    <ImageBrush/>
+                </ProgressBar.Background>
+            </ProgressBar>
+        </Grid>
+    </Grid>
+</Page>

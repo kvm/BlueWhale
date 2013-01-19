@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SRKURUMA-MSFT</Machine>
+    <WindowsUser>srkuruma</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\IdeoneWindows8.exe">
+      <PackagePath>IdeoneWindows8.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\IdeoneWindows8.pdb">
+      <PackagePath>IdeoneWindows8.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\packages\Chq.OAuth.dll.0.8.3\lib\winrt45\Chq.OAuth.winmd">
+      <PackagePath>Chq.OAuth.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\packages\Facebook.6.1.4\lib\win8\Facebook.dll">
+      <PackagePath>Facebook.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\packages\Newtonsoft.Json.4.5.5\lib\winrt45\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\packages\Facebook.6.1.4\lib\win8\Facebook.xml">
+      <PackagePath>Facebook.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\packages\Newtonsoft.Json.4.5.5\lib\winrt45\Newtonsoft.Json.xml">
+      <PackagePath>Newtonsoft.Json.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\Resources\facebook.png">
+      <PackagePath>Resources\facebook.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\Resources\google.png">
+      <PackagePath>Resources\google.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\GettingStarted.txt">
+      <PackagePath>GettingStarted.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\Resources\Nanotubes.jpg">
+      <PackagePath>Resources\Nanotubes.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\Resources\twitter.jpg">
+      <PackagePath>Resources\twitter.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\HomePage.xaml">
+      <PackagePath>HomePage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

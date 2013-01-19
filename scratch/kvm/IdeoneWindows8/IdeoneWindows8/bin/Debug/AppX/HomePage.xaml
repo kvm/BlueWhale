@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="IdeoneWindows8.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IdeoneWindows8"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Image x:Name="picProfile" HorizontalAlignment="Left" Height="169" Margin="465,85,0,0" VerticalAlignment="Top" Width="184"/>
+
+    </Grid>
+</Page>
+
