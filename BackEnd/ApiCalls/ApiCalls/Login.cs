@@ -76,7 +76,7 @@ namespace ApiCalls
                 document.Load(userCheckResponse.Content.ReadAsStreamAsync().Result);
                 if (Int32.Parse(document.DocumentElement.SelectSingleNode("/xml/IsPresent").InnerText) == 1)
                     return (int)ReturnTypes.ReturnCode.UserAlreadyExists;
-                if (Int32.Parse(document.DocumentElement.SelectSingleNode("/xml/Created").InnerText) == 0)
+                if (Int32.Parse(document.DocumentElement.SelectSingleNode("/xml/Created").InnerText) == 1)
                     return (int)ReturnTypes.ReturnCode.UserCreationSuccessful;
                 else return (int)ReturnTypes.ReturnCode.UnKnownError;
             }
