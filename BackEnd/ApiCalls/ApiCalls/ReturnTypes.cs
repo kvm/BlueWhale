@@ -22,7 +22,10 @@ namespace ApiCalls
             UserExists = 2 ,
             UserCreationUnsuccessful = -1,
             UserNotExists = -2,
-            ServerError = 500
+            UserAlreadyExists = -3,
+            ServerError = -500,
+            UnKnownError = -1001,
+            XmlException = -1002
 
         }
     }

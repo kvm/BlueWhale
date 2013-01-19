@@ -1,5 +1,5 @@
 Create Table CSuser(
-ID LONG PRIMARY KEY,
+ID BIGINT PRIMARY KEY,
 ServiceUserName VARCHAR(100),
 ServiceUserID LONG NOT NULL,
 ServiceType INT NOT NULL,
