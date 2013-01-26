@@ -9,6 +9,7 @@
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         <Image x:Name="picProfile" HorizontalAlignment="Left" Height="169" Margin="465,85,0,0" VerticalAlignment="Top" Width="184"/>
+        <TextBlock x:Name="text1" HorizontalAlignment="Left" Margin="115,100,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="68" Width="188"/>
 
     </Grid>
 </Page>

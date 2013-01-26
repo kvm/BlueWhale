@@ -1,1 +1,1 @@
-C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\IdeoneWindows8.csproj;neutral
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\IdeoneWindows8.csproj;neutral

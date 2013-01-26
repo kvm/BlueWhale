@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>SRKURUMA-MSFT</Machine>
-    <WindowsUser>srkuruma</WindowsUser>
+    <Machine>SRAVANTH</Machine>
+    <WindowsUser>Sravanth</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>EFEA293AFF959098B8BA78FD4B8637D37CA581AD9FA9175BEC0EE89336DE391E</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>5ED3D9E9150B89B0454D42190E574EBA22A52777F5C25674B2D99E549D4093C0</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>7c57f58e-9f60-4f34-9012-ff5b243d096e_1.0.0.0_neutral__2ppyrnn50fgg4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>7c57f58e-9f60-4f34-9012-ff5b243d096e_2ppyrnn50fgg4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>7c57f58e-9f60-4f34-9012-ff5b243d096e</RegisteredPackageID>
@@ -13,100 +13,100 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-01-11T17:39:47.515</Modified>
+      <Modified>2013-01-20T19:12:13.695</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\IdeoneWindows8.exe">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\IdeoneWindows8.exe">
       <PackagePath>IdeoneWindows8.exe</PackagePath>
-      <Modified>2013-01-13T11:25:15.401</Modified>
+      <Modified>2013-01-26T18:55:27.465</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\IdeoneWindows8.pdb">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\IdeoneWindows8.pdb">
       <PackagePath>IdeoneWindows8.pdb</PackagePath>
-      <Modified>2013-01-13T11:25:15.382</Modified>
+      <Modified>2013-01-26T18:55:27.436</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\packages\Chq.OAuth.dll.0.8.3\lib\winrt45\Chq.OAuth.winmd">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\packages\Chq.OAuth.dll.0.8.3\lib\winrt45\Chq.OAuth.winmd">
       <PackagePath>Chq.OAuth.winmd</PackagePath>
-      <Modified>2013-01-08T17:25:49.742</Modified>
+      <Modified>2013-01-19T21:23:34.916</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\packages\Facebook.6.1.4\lib\win8\Facebook.dll">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\packages\Facebook.6.1.4\lib\win8\Facebook.dll">
       <PackagePath>Facebook.dll</PackagePath>
-      <Modified>2013-01-04T19:36:36.428</Modified>
+      <Modified>2013-01-14T11:48:30.147</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\packages\Newtonsoft.Json.4.5.5\lib\winrt45\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\packages\Newtonsoft.Json.4.5.5\lib\winrt45\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2013-01-06T08:57:27.252</Modified>
+      <Modified>2013-01-14T11:48:30.489</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\packages\Facebook.6.1.4\lib\win8\Facebook.xml">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\packages\Facebook.6.1.4\lib\win8\Facebook.xml">
       <PackagePath>Facebook.xml</PackagePath>
-      <Modified>2013-01-04T19:36:36.431</Modified>
+      <Modified>2013-01-14T11:48:30.153</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\packages\Newtonsoft.Json.4.5.5\lib\winrt45\Newtonsoft.Json.xml">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\packages\Newtonsoft.Json.4.5.5\lib\winrt45\Newtonsoft.Json.xml">
       <PackagePath>Newtonsoft.Json.xml</PackagePath>
-      <Modified>2013-01-06T08:57:27.262</Modified>
+      <Modified>2013-01-14T11:48:30.499</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\Assets\Logo.png">
-      <PackagePath>Assets\Logo.png</PackagePath>
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\Assets\logo.png">
+      <PackagePath>Assets\logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-03-15T15:12:52.000</Modified>
+      <Modified>2013-01-18T21:09:47.704</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\Assets\SmallLogo.png">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\Assets\SmallLogo.png">
       <PackagePath>Assets\SmallLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-03-15T15:12:52.000</Modified>
+      <Modified>2013-01-14T11:48:29.088</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-03-15T15:12:52.000</Modified>
+      <Modified>2013-01-19T09:12:45.431</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2012-03-15T15:12:52.000</Modified>
+      <Modified>2013-01-14T11:48:29.092</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\Resources\facebook.png">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\Resources\facebook.png">
       <PackagePath>Resources\facebook.png</PackagePath>
-      <Modified>2013-01-04T21:13:56.787</Modified>
+      <Modified>2013-01-14T11:48:29.305</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\Resources\google.png">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\Resources\google.png">
       <PackagePath>Resources\google.png</PackagePath>
-      <Modified>2013-01-05T07:55:40.146</Modified>
+      <Modified>2013-01-14T11:48:29.307</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\GettingStarted.txt">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\GettingStarted.txt">
       <PackagePath>GettingStarted.txt</PackagePath>
-      <Modified>2013-01-06T08:57:29.397</Modified>
+      <Modified>2013-01-14T11:48:29.255</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\Resources\Nanotubes.jpg">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\Resources\Nanotubes.jpg">
       <PackagePath>Resources\Nanotubes.jpg</PackagePath>
-      <Modified>2013-01-04T20:08:07.319</Modified>
+      <Modified>2013-01-14T11:48:29.304</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\Resources\twitter.jpg">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\Resources\twitter.jpg">
       <PackagePath>Resources\twitter.jpg</PackagePath>
-      <Modified>2013-01-05T07:56:24.574</Modified>
+      <Modified>2013-01-14T11:48:29.310</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\App.xaml">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\App.xaml">
       <PackagePath>App.xaml</PackagePath>
-      <Modified>2013-01-04T19:27:50.993</Modified>
+      <Modified>2013-01-14T11:48:29.077</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\Common\StandardStyles.xaml">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
-      <Modified>2012-06-26T10:49:20.000</Modified>
+      <Modified>2013-01-14T11:48:29.112</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\HomePage.xaml">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\HomePage.xaml">
       <PackagePath>HomePage.xaml</PackagePath>
-      <Modified>2013-01-05T10:40:38.376</Modified>
+      <Modified>2013-01-14T18:45:42.783</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\MainPage.xaml">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
-      <Modified>2013-01-12T21:24:00.516</Modified>
+      <Modified>2013-01-14T11:48:29.284</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2013-01-10T18:24:02.684</Modified>
+      <Modified>2013-01-18T21:13:16.849</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

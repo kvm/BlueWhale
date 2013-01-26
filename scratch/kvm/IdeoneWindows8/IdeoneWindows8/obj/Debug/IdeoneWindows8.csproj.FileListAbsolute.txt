@@ -35,3 +35,40 @@ C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWin
 C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\Newtonsoft.Json.dll
 C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\Newtonsoft.Json.xml
 C:\Users\srkuruma\documents\visual studio 2012\Projects\IdeoneWindows8\IdeoneWindows8\bin\Debug\Chq.OAuth.winmd
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\IdeoneWindows8.exe
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\IdeoneWindows8.pdb
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\resources.pri
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\AppxManifest.xml
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\IdeoneWindows8.build.appxrecipe
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\Chq.OAuth.winmd
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\Facebook.dll
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\Newtonsoft.Json.dll
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\Facebook.xml
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\bin\Debug\Newtonsoft.Json.xml
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\IdeoneWindows8.csprojResolveAssemblyReference.cache
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\App.g.i.cs
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\App.g.cs
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\Common\StandardStyles.g.i.cs
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\Common\StandardStyles.g.cs
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\HomePage.g.i.cs
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\HomePage.g.cs
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\MainPage.g.i.cs
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\MainPage.g.cs
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\XamlTypeInfo.g.cs
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\App.xaml
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\Common\StandardStyles.xaml
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\HomePage.xaml
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\MainPage.xaml
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\IdeoneWindows8.exe
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\IdeoneWindows8.pdb
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\IdeoneWindows8.csproj.GenerateResource.Cache
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\priconfig.xml
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\layout.resfiles
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\resources.resfiles
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\pri.resfiles
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\LanguageQualifiers.txt
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\ProjectArchitectures.txt
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\priconfig.xml.intermediate
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\layout.resfiles.intermediate
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\resources.resfiles.intermediate
+E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\obj\Debug\pri.resfiles.intermediate

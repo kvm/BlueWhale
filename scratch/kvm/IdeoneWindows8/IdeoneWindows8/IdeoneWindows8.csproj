@@ -108,6 +108,7 @@
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Library\DataBindingClass.cs" />
+    <Compile Include="Library\UserInfo.cs" />
     <Compile Include="Library\Utils.cs" />
     <Compile Include="Library\Oauth.cs" />
     <Compile Include="MainPage.xaml.cs">
@@ -123,7 +124,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\logo.png" />
     <Content Include="Assets\SmallLogo.png" />
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\StoreLogo.png" />
@@ -152,7 +153,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Chq.OAuth">
+    <Reference Include="Chq.OAuth, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Chq.OAuth.dll.0.8.3\lib\winrt45\Chq.OAuth.winmd</HintPath>
     </Reference>
     <Reference Include="Facebook">

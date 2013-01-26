@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Windows.Security.Cryptography;
 using Windows.Security.Cryptography.Core;
 using Windows.Storage.Streams;
+using System.Net;
 
 namespace IdeoneWindows8.Library
 {
