@@ -9,12 +9,11 @@ namespace ApiCalls
     {
         static void Main(string[] args)
         {
-            Login loginClient = new Login(1);
+            Login loginClient = new Login(0,0);
             //loginClient.Check_User_Exist(1,"pop","google");
             Credentials credentials = new Credentials();
-            loginClient.Create_User(credentials);
-            loginClient.Check_User_Exist(credentials);
-            
+            Console.WriteLine(loginClient.Create_User(credentials).ToString());
+            Console.WriteLine(loginClient.Check_User_Exist(credentials).ToString());
             Console.ReadKey();
         }
     }
