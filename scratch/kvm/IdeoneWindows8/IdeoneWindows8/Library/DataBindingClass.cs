@@ -12,16 +12,16 @@ namespace IdeoneWindows8.Library
     public class DataBindingClass : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        private bool _isIndeterminate;
-        public bool isIndeterminate
+        private bool _progressBarIsIndeterminate;
+        public bool progressBarIsIndeterminate
         {
             get
             {
-                return _isIndeterminate;
+                return _progressBarIsIndeterminate;
             }
             set
             {
-                _isIndeterminate = value;
+                _progressBarIsIndeterminate = value;
                 if(PropertyChanged != null)
                     PropertyChanged(this,new PropertyChangedEventArgs("isIndeterminate"));
             }

@@ -42,73 +42,78 @@ namespace IdeoneWindows8
     {
         private String PostResponse;
 
-        DataBindingClass myDataSource = new Library.DataBindingClass();
+        // The following instance holds all the data which is bound to XAML elements using DataBinding
+        DataBindingClass dataBindingSource = new Library.DataBindingClass();
        
         public MainPage()
         {
             this.InitializeComponent();
-            DataContext = myDataSource;
-            myDataSource.isIndeterminate = false;
+            // Setting the datacontext for binding
+            DataContext = dataBindingSource;
+            // Turning the ProgressBar OFF
+            dataBindingSource.progressBarIsIndeterminate = false;
         }
 
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.  The Parameter
-        /// property is typically used to configure the page.</param>
+        /// property is typically used to configure the page.</param>c
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            myDataSource.isIndeterminate = false;
+            dataBindingSource.progressBarIsIndeterminate = false;
         }
 
-        private void Image_GotFocus_1(object sender, RoutedEventArgs e)
+
+        #region LogIn Button Opacity Effects
+        
+        private void Facebook_PointerEntered(object sender, PointerRoutedEventArgs e)
         {
             ((Image)sender).Opacity = 0.8;
         }
 
-        private void Image_PointerEntered_1(object sender, PointerRoutedEventArgs e)
-        {
-            ((Image)sender).Opacity = 0.8;
-        }
-
-        private void Image_PointerExited_1(object sender, PointerRoutedEventArgs e)
+        private void Facebook_PointerExited(object sender, PointerRoutedEventArgs e)
         {
             ((Image)sender).Opacity = 1.0;
         }
 
-        private void Image_PointerEntered_2(object sender, PointerRoutedEventArgs e)
+        private void Twitter_PointerEntered(object sender, PointerRoutedEventArgs e)
         {
             ((Image)sender).Opacity = 0.8;
         }
 
-        private void Image_PointerExited_2(object sender, PointerRoutedEventArgs e)
+        private void Twitter_PointerExited(object sender, PointerRoutedEventArgs e)
         {
             ((Image)sender).Opacity = 1.0;
         }
 
-        private void Image_PointerEntered_3(object sender, PointerRoutedEventArgs e)
+        private void Google_PointerEntered(object sender, PointerRoutedEventArgs e)
         {
             ((Image)sender).Opacity = 0.8;
         }
 
-        private void Image_PointerExited_3(object sender, PointerRoutedEventArgs e)
+        private void Google_PointerExited(object sender, PointerRoutedEventArgs e)
         {
             ((Image)sender).Opacity = 1.0;
         }
+        #endregion
 
-        private async void Image_Tapped_1(object sender, TappedRoutedEventArgs e)
+        #region LogIn Button OnClick Functions
+
+        #region Facebook
+        private async void Facebook_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            myDataSource.isIndeterminate = true;
+            //Turning ProgressBar ON
+            dataBindingSource.progressBarIsIndeterminate = true;
+            //Setting appID and user permissions
+            string _facebookAppId = "135066233237101";
+            string _permissions = "user_about_me,email";
 
-            string _facebookAppId = "135066233237101";// You must set your own AppId here
-            string _permissions = "user_about_me,email"; // Set your permissions here
-
+            //Initialising the FacebookClient Class Object
             FacebookClient _fb = new FacebookClient();
-
             var redirectUrl = "https://www.facebook.com/connect/login_success.html";
             try
             {
-                //fb.AppId = facebookAppId;
                 var loginUrl = _fb.GetLoginUrl(new
                 {
                     client_id = _facebookAppId,
@@ -131,7 +136,10 @@ namespace IdeoneWindows8
                     var accessToken = facebookOAuthResult.AccessToken;
                     if (String.IsNullOrEmpty(accessToken))
                     {
-                        // User is not logged in, they may have canceled the login
+                        MessageDialog errorDialog = new MessageDialog("Please Login to your Account! Click on the Facebook LogIn");
+                        errorDialog.Commands.Add(new UICommand("OK"));
+                        errorDialog.DefaultCommandIndex = 0;
+                        await errorDialog.ShowAsync();
                     }
                     else
                     {
@@ -142,7 +150,7 @@ namespace IdeoneWindows8
                 }
                 else if (WebAuthenticationResult.ResponseStatus == WebAuthenticationStatus.ErrorHttp)
                 {
-                    myDataSource.isIndeterminate = false;
+                    dataBindingSource.progressBarIsIndeterminate = false;
                     var messageBox = new MessageDialog("Could not connect to the network.Please check your internet connection");
                     messageBox.Commands.Add(new UICommand("OK"));
                     messageBox.DefaultCommandIndex = 0;
@@ -151,8 +159,8 @@ namespace IdeoneWindows8
                 }
                 else
                 {
-                    myDataSource.isIndeterminate = false;
                     // The user canceled the authentication
+                    dataBindingSource.progressBarIsIndeterminate = false;
                 }
             }
             catch (Exception ex)
@@ -160,7 +168,6 @@ namespace IdeoneWindows8
                 throw ex;
             }
         }
-
         private async void LoginSucceded(string accessToken, FacebookClient _fb)
         {
             dynamic parameters = new ExpandoObject();
@@ -170,13 +177,18 @@ namespace IdeoneWindows8
 
             dynamic result = await _fb.GetTaskAsync("me");
             dynamic picture = await _fb.GetTaskAsync("me?fields=picture");
-            result.picture = picture.picture.data.url;
+            if (picture.picture != null)
+            {
+                result.picture = picture.picture.data.url;
+            }
             result.service = "Facebook";
             UserInfo user = new UserInfo(result);
 
             Frame.Navigate(typeof(HomePage), (object)user);
         }
+        #endregion
 
+        #region Twitter
         private async Task<String> PostData(String Url, String Data, bool isPOST)
         {
             PostResponse = null;
@@ -200,10 +212,9 @@ namespace IdeoneWindows8
 
             return PostResponse;
         }
-
-        private async void Image_Tapped_2(object sender, TappedRoutedEventArgs e)
+        private async void Twitter_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            myDataSource.isIndeterminate = true;
+            dataBindingSource.progressBarIsIndeterminate = true;
 
             //Make a POST Request and get the Request Token
             TwitterOauth twitter = new TwitterOauth();
@@ -405,28 +416,47 @@ namespace IdeoneWindows8
                             Newtonsoft.Json.Linq.JObject twitterUserInfoJObject = Newtonsoft.Json.Linq.JObject.Parse(postResponse);
 
                             dynamic parameter = new ExpandoObject();
-                            parameter.id = twitterUserInfoJObject["id"];
-                            parameter.username = twitterUserInfoJObject["screen_name"];
-                            parameter.first_name = twitterUserInfoJObject["name"];
-                            parameter.picture = twitterUserInfoJObject["profile_image_url_https"];
-                            parameter.service = "Twitter";
+                            try
+                            {
+                                Newtonsoft.Json.Linq.JToken value;
+                                if (twitterUserInfoJObject.TryGetValue("id",out value))
+                                {
+                                    parameter.id = value.ToString();
+                                }
+                                if (twitterUserInfoJObject.TryGetValue("screen_name", out value))
+                                {
+                                    parameter.username = value.ToString();
+                                }
+                                if (twitterUserInfoJObject.TryGetValue("name", out value))
+                                {
+                                    parameter.first_name = value.ToString();
+                                }
+                                if (twitterUserInfoJObject.TryGetValue("profile_image_url_https", out value))
+                                {
+                                    parameter.picture = value.ToString();
+                                }
+                                parameter.service = "Twitter";
+                            }
+                            catch (NullReferenceException ex)
+                            {
+                                  
+                            }
                             UserInfo user = new UserInfo(parameter);
 
                             Frame.Navigate(typeof(HomePage), (object) user);
                         }
                         else if (WebAuthenticationResult.ResponseStatus == WebAuthenticationStatus.ErrorHttp)
                         {
-                              myDataSource.isIndeterminate = false;
+                              dataBindingSource.progressBarIsIndeterminate = false;
                               var messageBox = new MessageDialog("Could not connect to the network.Please check your internet connections");
                               messageBox.Commands.Add(new UICommand("OK"));
                               messageBox.DefaultCommandIndex = 0;
                               await messageBox.ShowAsync();
-                      //      OutputToken("HTTP Error returned by AuthenticateAsync() : " + WebAuthenticationResult.ResponseErrorDetail.ToString());
                         }
                         else
                         {
-                              myDataSource.isIndeterminate = false;
-                        //    OutputToken("Error returned by AuthenticateAsync() : " + WebAuthenticationResult.ResponseStatus.ToString());
+                              //User cancelled login 
+                              dataBindingSource.progressBarIsIndeterminate = false;
                         }
                     }
                 }
@@ -434,19 +464,18 @@ namespace IdeoneWindows8
             }
             catch (Exception Error)
             {
-                //
-                // Bad Parameter, SSL/TLS Errors and Network Unavailable errors are to be handled here.
-                //
-                //DebugPrint(Error.ToString());
+                throw Error;
             }
 
         }
+        #endregion
 
-        private async void Image_Tapped_3(object sender, TappedRoutedEventArgs e)
+        #region Google
+        private async void Google_Tapped(object sender, TappedRoutedEventArgs e)
         {
             try
             {
-                myDataSource.isIndeterminate = true;
+                dataBindingSource.progressBarIsIndeterminate = true;
                 string googleAccessToken = String.Empty;
                 string googleClientId = "368616127369.apps.googleusercontent.com";
                 string googleClientSecret = "aGXFskgLTG52-DG8uxYN60cJ";
@@ -504,14 +533,33 @@ namespace IdeoneWindows8
                     Stream responseStream1 = webResponse.GetResponseStream();
                     StreamReader reader1 = new StreamReader(responseStream1);
                     Newtonsoft.Json.Linq.JObject googleUserInfoJObject = Newtonsoft.Json.Linq.JObject.Parse(reader1.ReadToEnd());
-
+                    Newtonsoft.Json.Linq.JToken jsonValue;
+                 
                     dynamic parameter = new ExpandoObject();
-                    parameter.id = googleUserInfoJObject["id"].ToString();
-                    parameter.username = googleUserInfoJObject["email"].ToString().Substring(0, googleUserInfoJObject["email"].ToString().IndexOf('@'));
-                    parameter.email = googleUserInfoJObject["email"].ToString();
-                    parameter.picture = googleUserInfoJObject["image"]["url"].ToString();
-                    parameter.first_name = googleUserInfoJObject["given_name"].ToString();
-                    parameter.last_name = googleUserInfoJObject["family_name"].ToString();
+                    if (googleUserInfoJObject.TryGetValue("id", out jsonValue))
+                    {
+                        parameter.id = jsonValue.ToString();
+                    }
+                    if (googleUserInfoJObject.TryGetValue("email", out jsonValue))
+                    {
+                        parameter.username = googleUserInfoJObject["email"].ToString().Substring(0, googleUserInfoJObject["email"].ToString().IndexOf('@'));
+                    }
+                    if (googleUserInfoJObject.TryGetValue("id", out jsonValue))
+                    {
+                        parameter.email = googleUserInfoJObject["email"].ToString();
+                    }
+                    if (googleUserInfoJObject.TryGetValue("image", out jsonValue))
+                    {
+                        parameter.picture = googleUserInfoJObject["image"]["url"].ToString();
+                    }
+                    if (googleUserInfoJObject.TryGetValue("given_name", out jsonValue))
+                    {
+                        parameter.first_name = googleUserInfoJObject["given_name"].ToString();
+                    }
+                    if (googleUserInfoJObject.TryGetValue("family_name", out jsonValue))
+                    {
+                        parameter.last_name = googleUserInfoJObject["family_name"].ToString();
+                    }
                     parameter.service = "Google";
 
                     UserInfo user = new UserInfo(parameter);
@@ -519,7 +567,7 @@ namespace IdeoneWindows8
                 }
                 else if (WebAuthenticationResult.ResponseStatus == WebAuthenticationStatus.ErrorHttp)
                 {
-                    myDataSource.isIndeterminate = false;
+                    dataBindingSource.progressBarIsIndeterminate = false;
                     var messageBox = new MessageDialog("Could not connect to the network.Please check your internet connections");
                     messageBox.Commands.Add(new UICommand("OK"));
                     messageBox.DefaultCommandIndex = 0;
@@ -527,16 +575,67 @@ namespace IdeoneWindows8
                 }
                 else
                 {
-                    //OutputToken("Error returned by AuthenticateeaAsync() : " + WebAuthenticationResult.ResponseStatus.ToString());
+                    // User cancelled LogIn
+                    dataBindingSource.progressBarIsIndeterminate = false;
                 }
             }
             catch (Exception Error)
             {
-                //
-                // Bad Parameter, SSL/TLS Errors and Network Unavailable errors are to be handled here.
-                //
-                //DebugPrint(Error.ToString());
+                
             }
+        }
+        #endregion
+
+        private void Facebook_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            Facebook.Opacity = 0.8;
+        }
+
+        #endregion
+
+        private void Facebook_PointerReleased(object sender, PointerRoutedEventArgs e)
+        {
+            Facebook.Opacity = 1.0;
+        }
+
+        private void Twitter_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            Twitter.Opacity = 0.8;
+        }
+
+        private void Twitter_PointerReleased(object sender, PointerRoutedEventArgs e)
+        {
+            Twitter.Opacity = 1.0;
+        }
+
+        private void Google_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            Google.Opacity = 0.8;
+        }
+
+        private void Google_PointerReleased(object sender, PointerRoutedEventArgs e)
+        {
+            Google.Opacity = 1.0;
+        }
+
+        private void Twitter_LostFocus(object sender, RoutedEventArgs e)
+        {
+            Twitter.Opacity = 1.0;
+        }
+
+        private void Google_LostFocus(object sender, RoutedEventArgs e)
+        {
+            Google.Opacity = 1.0;
+        }
+
+        private void Facebook_LostFocus(object sender, RoutedEventArgs e)
+        {
+            Facebook.Opacity = 1.0;
+        }
+
+        private void Facebook_DragLeave(object sender, DragEventArgs e)
+        {
+            Facebook.Opacity = 1.0;
         }
     }
 }

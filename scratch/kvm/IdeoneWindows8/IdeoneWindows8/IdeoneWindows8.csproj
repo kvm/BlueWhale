@@ -132,6 +132,7 @@
     <Content Include="Resources\facebook.png" />
     <Content Include="Resources\google.png" />
     <Content Include="Resources\Nanotubes.jpg" />
+    <Content Include="Resources\no_profile_image.png" />
     <Content Include="Resources\twitter.jpg" />
   </ItemGroup>
   <ItemGroup>

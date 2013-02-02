@@ -56,6 +56,9 @@
     <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\Resources\google.png">
       <PackagePath>Resources\google.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\Resources\no_profile_image.png">
+      <PackagePath>Resources\no_profile_image.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\GitProjects\BlueWhale\scratch\kvm\IdeoneWindows8\IdeoneWindows8\GettingStarted.txt">
       <PackagePath>GettingStarted.txt</PackagePath>
     </AppxPackagedFile>

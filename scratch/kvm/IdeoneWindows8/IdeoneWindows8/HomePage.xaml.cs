@@ -36,6 +36,11 @@ namespace IdeoneWindows8
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             UserInfo user = e.Parameter as UserInfo;
+            tbk_emailid.Text = user.EmailID;
+            tbk_fullname.Text = user.FullName;
+            tbk_username.Text = user.UserName;
+            tbk_userid.Text = user.UserID;
+            img_profile.Source = user.ProfileImage;
         }
     }
 }

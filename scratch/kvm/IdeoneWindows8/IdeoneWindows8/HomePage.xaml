@@ -8,8 +8,16 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-        <Image x:Name="picProfile" HorizontalAlignment="Left" Height="169" Margin="465,85,0,0" VerticalAlignment="Top" Width="184"/>
-        <TextBlock x:Name="text1" HorizontalAlignment="Left" Margin="115,100,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="68" Width="188"/>
+        <Image x:Name="picProfile" HorizontalAlignment="Left" Height="169" Margin="568,85,0,0" VerticalAlignment="Top" Width="184"/>
+        <TextBlock x:Name="text1" HorizontalAlignment="Left" Margin="55,93,0,0" TextWrapping="Wrap" Text="UserName :" VerticalAlignment="Top" Height="26" Width="160" FontSize="20"/>
+        <TextBlock x:Name="tbk_username" HorizontalAlignment="Left" Margin="241,93,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="26" Width="160" FontSize="20"/>
+        <TextBlock x:Name="text1_Copy1" HorizontalAlignment="Left" Margin="55,124,0,0" TextWrapping="Wrap" Text="Full name :" VerticalAlignment="Top" Height="26" Width="160" FontSize="20"/>
+        <TextBlock x:Name="text1_Copy2" HorizontalAlignment="Left" Margin="55,155,0,0" TextWrapping="Wrap" Text="Email :" VerticalAlignment="Top" Height="26" Width="160" FontSize="20"/>
+        <TextBlock x:Name="text1_Copy3" HorizontalAlignment="Left" Margin="55,186,0,0" TextWrapping="Wrap" Text="User ID :" VerticalAlignment="Top" Height="26" Width="160" FontSize="20"/>
+        <TextBlock x:Name="tbk_fullname" HorizontalAlignment="Left" Margin="241,124,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="26" Width="160" FontSize="20"/>
+        <TextBlock x:Name="tbk_emailid" HorizontalAlignment="Left" Margin="241,155,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="26" Width="282" FontSize="20"/>
+        <TextBlock x:Name="tbk_userid" HorizontalAlignment="Left" Margin="241,186,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="26" Width="160" FontSize="20"/>
+        <Image x:Name="img_profile" HorizontalAlignment="Left" Height="127" Margin="537,85,0,0" VerticalAlignment="Top" Width="160"/>
 
     </Grid>
 </Page>
